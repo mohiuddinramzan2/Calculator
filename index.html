@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>ক্যালকুলেটর</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%236366f1%22/><text x=%2250%22 y=%2568%22 font-size=%2250%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22>+</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>ক্যালকুলেটর</h1>
+      <button id="historyToggle" class="icon-btn" aria-label="History">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/>
+          <polyline points="12 7 12 12 15 14"/>
+        </svg>
+      </button>
+    </header>
+
+    <main class="calc-wrap">
+      <div class="display">
+        <div id="expression" class="expression"></div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key op-secondary" data-action="clear">C</button>
+        <button class="key op-secondary" data-action="delete">⌫</button>
+        <button class="key op-secondary" data-action="percent">%</button>
+        <button class="key op-primary" data-action="operator" data-value="÷">÷</button>
+
+        <button class="key num" data-value="7">7</button>
+        <button class="key num" data-value="8">8</button>
+        <button class="key num" data-value="9">9</button>
+        <button class="key op-primary" data-action="operator" data-value="×">×</button>
+
+        <button class="key num" data-value="4">4</button>
+        <button class="key num" data-value="5">5</button>
+        <button class="key num" data-value="6">6</button>
+        <button class="key op-primary" data-action="operator" data-value="-">−</button>
+
+        <button class="key num" data-value="1">1</button>
+        <button class="key num" data-value="2">2</button>
+        <button class="key num" data-value="3">3</button>
+        <button class="key op-primary" data-action="operator" data-value="+">+</button>
+
+        <button class="key num zero" data-value="0">0</button>
+        <button class="key num" data-value=".">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+    </main>
+
+    <aside id="historyPanel" class="history-panel">
+      <div class="history-header">
+        <h2>হিস্টোরি</h2>
+        <button id="closeHistory" class="icon-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <p class="history-empty">এখনো কোনো হিসাব সেভ হয়নি</p>
+      </div>
+      <button id="clearHistory" class="clear-history-btn">সব মুছে ফেলুন</button>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
