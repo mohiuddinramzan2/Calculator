@@ -1,0 +1,26 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "ক্লিন, মিনিমাল, প্রফেশনাল ডিজাইনের একটি ওয়েব ক্যালকুলেটর। প্রতিটি হিসাব স্বয়ংক্রিয়ভাবে ব্রাউজারের `localStorage`-এ সেভ থাকে (হিস্টোরি প্যানেল থেকে দেখা/মুছা যায়)।",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohiuddinramzan2/Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mohiuddinramzan2/Calculator/issues"
+  },
+  "homepage": "https://github.com/mohiuddinramzan2/Calculator#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0"
+  }
+}
